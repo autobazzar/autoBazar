@@ -5,7 +5,7 @@ the car shopping project root
 ```bash
 
 # clone both projects
-$ git clone --recurse-submodules  https://github.com/IHesamI/autoBazar.git
+$ git clone --recurse-submodules  [https://github.com/IHesamI/autoBazar.git](https://github.com/autobazzar/autoBazar.git)
 
 ```
 ## Update the projects
