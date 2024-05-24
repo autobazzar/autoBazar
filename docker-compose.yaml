@@ -1,4 +1,4 @@
-version: '1'
+version: '3'
 services:
   client:
     build:
@@ -7,21 +7,18 @@ services:
     volumes:
       - /app/node_modules
       - ./client:/app
-    ports:
-      -"4173":"4173"
+    ports: -"5173":"5173"
   server:
-    build: 
+    build:
       context: ./server
       dockerfile: Dockerfile.dev
     volumes:
       - ./server:/app
-    ports:
-      -"3000":"3000"
+    ports: -"3000":"3000"
   nginx:
-    build: 
+    build:
       context: ./nginx
       dockerfile: Dockerfile
-    ports:
-      -"80":"80"
+    ports: -"80":"80"
     depends_on:
       - server
