@@ -6,4 +6,4 @@ git checkout dockerize
 cd ../server
 git checkout dockerize
 
-sudo docker compose up
+sudo docker compose up --build
