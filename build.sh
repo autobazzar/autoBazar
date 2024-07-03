@@ -2,10 +2,10 @@
 
 cd ./client 
 git checkout dockerize
-git pull origin master
+sudo git merge master
 
 cd ../server
 git checkout dockerize
-git pull origin master
+sudo git merge master
 
 sudo docker compose up --build
